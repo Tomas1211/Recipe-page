@@ -98,6 +98,29 @@ body {
         }
       }
     }
+
+    ol {
+      list-style: none;
+
+      li {
+        position: relative;
+        padding-left: 2rem;
+        counter-increment: item;
+
+        &::before {
+          content: counter(item) ". ";
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 1rem;
+          color: $brown800;
+          font-weight: 700;
+          display: inline-block;
+          padding-right: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
   }
 }
 
