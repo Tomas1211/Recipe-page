@@ -73,20 +73,40 @@ body {
     
     h2 {
       font-size: 1.5rem;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
       color: $brown800;
     }
 
     ul, ol {
       list-style-position: inside;
     }
-  }
 
+    ul {
+      list-style: none;
+
+      li {
+        position: relative;
+        padding-left: 2rem;
+
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0.5rem;
+          color: $brown800;
+          line-height: 1.5;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
 
-.recipe section:first-child,
+.recipe section:first-child {
+  margin-top: 0;
+}
+
 .recipe section:last-child {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 
