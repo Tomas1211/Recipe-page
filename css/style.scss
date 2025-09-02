@@ -50,27 +50,33 @@ body {
   background-color: $white;
   border-radius: 1rem;
 
-  img {
-    width: 100%;
-    max-width: 100%;
-    max-height: 300px;
-    border-radius: 0.5rem;
+  section {
+    margin: 2rem 0;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 0.5rem;
+    }
+  
+    h1, h2 {
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-top: 2.5rem;
+      letter-spacing: 2px;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      color: $brown800;
+    }
   }
 
-  h1, h2 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    letter-spacing: 2px;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
 }
 
 
