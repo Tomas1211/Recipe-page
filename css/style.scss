@@ -50,6 +50,7 @@ body {
   background-color: $white;
   border-radius: 1rem;
 
+  
   section {
     margin: 2rem 2.5rem;
 
@@ -67,9 +68,9 @@ body {
     
     h1 {
       font-size: 2rem;
+      line-height: 1;
       margin-top: 2.5rem;
       padding-bottom: 1rem;
-      letter-spacing: 2px;
       color: $stone900;
     }
     
@@ -198,3 +199,44 @@ section.nutrition {
   margin-bottom: 0;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 375px) {
+  .container {
+    margin: 0 auto;
+
+    .recipe {
+      padding-top: 0;
+
+      section {
+        margin: 2rem 2rem;
+
+      }
+
+      .image {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        
+        img {
+          border-radius: 0;        
+        }
+      }
+
+      section.prep-time {
+        background-color: $rose50;
+        border-radius: 1rem;
+        padding: 1.5rem;
+
+        ul {
+          li {
+            &:first-of-type {
+              &::before {
+                line-height: 2.3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
