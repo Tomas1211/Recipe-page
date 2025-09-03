@@ -46,12 +46,12 @@ body {
   max-width: 736px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 2.5rem 0;
   background-color: $white;
   border-radius: 1rem;
 
   section {
-    margin: 2rem 0;
+    margin: 2rem 2.5rem;
 
     img {
       width: 100%;
@@ -68,11 +68,13 @@ body {
     h1 {
       font-size: 2rem;
       margin-top: 2.5rem;
+      padding-bottom: 1rem;
       letter-spacing: 2px;
+      color: $stone900;
     }
     
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       padding-bottom: 1rem;
       color: $brown800;
     }
@@ -127,6 +129,12 @@ body {
   }
 }
 
+section.ingredients,
+section.instructions {
+  border-bottom: 1px solid $stone150;
+  padding-bottom: 2rem;
+}
+
 section.prep-time {
   background-color: $rose50;
   border-radius: 1rem;
@@ -149,6 +157,39 @@ section.prep-time {
   }
 }
 
+section.nutrition {
+  table {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    tr {
+      
+      th, td {
+        border-bottom: 1px solid $stone150;
+        width: 50%;
+        padding: 0.7rem 0 0.7rem 2rem;
+      }
+
+      th {
+        font-weight: 400;
+      }
+
+      td {
+        font-weight: 700;
+        color: $brown800;
+      }
+    }
+
+    tr:last-of-type {
+      th, td {
+        border: none;
+      }
+    }
+  }
+}
+
 .recipe section:first-child {
   margin-top: 0;
 }
@@ -156,5 +197,4 @@ section.prep-time {
 .recipe section:last-child {
   margin-bottom: 0;
 }
-
 
